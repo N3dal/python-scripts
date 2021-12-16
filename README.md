@@ -1,1 +1,1 @@
-## REPO contain random scripts using python.
+## REPO contain python scripts.
