@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
-simple script that will tell you the operation that,
-happen between two numbers by giving it the result.
+simple script that will tell you the kind of operation that,
+happen between two int numbers by giving it the result.
 
 """
 
