@@ -21,7 +21,7 @@ def clear():
 
 
 def find_size_of_square(radius: float):
-    """calculate the largest square can fit inside,
+    """calculate the largest square we can fit inside,
     circle with radius r with this formula:
     let's assume the one side of the square is 'a', 
     and in this case the length of 'a' will equal to:
@@ -29,8 +29,8 @@ def find_size_of_square(radius: float):
     and to calculate the square size we know its,
     equal to [a^2] and that equal to:
     [a^2=2*r^2].
-    and by that we can calculate the largest square we can fit in circle.
-    note: remember 'r' not equal to 'R.
+    and by that we can calculate the largest square we can fit inside circle.
+    note: remember 'r' not equal to 'R'.
     remember [R=2r], so when try to prove the previous formula,
     remember that."""
 
