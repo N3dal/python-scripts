@@ -24,6 +24,7 @@
 from os import system
 from time import sleep
 import random
+import string
 
 
 def clear():
@@ -170,13 +171,13 @@ def animation_number(number: int = 2022):
         return -1
 
     num_string = generate_num(number, '#')
-    choices = ['!', '@', '#', 'X', 'O', '9', '^']
+    choices = [*string.ascii_letters, *string.digits, *string.punctuation]
     while 1:
         clear()
         rep = '#' if '#' in num_string else random.choice(choices)
         num_string = num_string.replace(rep, random.choice(choices), 1)
         print(num_string)
-        sleep(1e-1)
+        sleep(1e-2)
 
 
 def main():
