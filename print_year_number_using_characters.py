@@ -22,6 +22,8 @@
 
 
 from os import system
+from time import sleep
+import random
 
 
 def clear():
@@ -123,7 +125,7 @@ numbers = [
 ]
 
 
-def print_num(number: int = 2022, char: str = '#'):
+def generate_num(number: int = 2022, char: str = '#') -> str():
     """this function will print the number that you enter,
     to ascii characters on the terminal."""
 
@@ -154,10 +156,34 @@ def print_num(number: int = 2022, char: str = '#'):
     return final_number.replace('#', char)
 
 
+def animation_number(number: int = 2022):
+    """this function will take a number and print as,
+    characters like the print_num function with one,
+    different and its this function will change the char,
+    that used to view the number randomly and with that,
+    we will get some nice effects."""
+
+    # first we need to get the number as string.
+
+    # guard condition
+    if not isinstance(number, int):
+        return -1
+
+    num_string = generate_num(number, '#')
+    choices = ['!', '@', '#', 'X', 'O', '9', '^']
+    while 1:
+        clear()
+        rep = '#' if '#' in num_string else random.choice(choices)
+        num_string = num_string.replace(rep, random.choice(choices), 1)
+        print(num_string)
+        sleep(1e-1)
+
+
 def main():
     # for num in numbers:
     #     print(num)
-    print(print_num(2022, '$$'))
+    # print(print_num(2022, '$$'))
+    animation_number(2002)
 
 
 if __name__ == "__main__":
