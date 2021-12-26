@@ -126,7 +126,7 @@ numbers = [
 ]
 
 
-def generate_num(number: int = 2022, char: str = '#') -> str():
+def generate_num(number: int = 2022, char: str = '#') -> str:
     """this function will print the number that you enter,
     to ascii characters on the terminal."""
 
